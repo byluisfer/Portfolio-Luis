@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function drawBackground() {
+
         ctx.clearRect(0, 0, canvas.width, canvas.height);
     
         const gridSize = 184; // Width of each cell
@@ -66,6 +67,24 @@ document.addEventListener("DOMContentLoaded", () => {
     
         ctx.fillStyle = gradient;
         ctx.fillRect(0, 0, canvas.width, canvas.height);
+        
+        // Add a gradient light to the top of the canvas
+        const lightGradient = ctx.createRadialGradient(
+            canvas.width / 2,
+            0,
+            50,
+            canvas.width / 2,
+            400,
+            1200
+        );
+
+        lightGradient.addColorStop(0, "rgba(255, 255, 255, 0.12)");
+        lightGradient.addColorStop(0.3, "rgba(255, 255, 255, 0.08)");
+        lightGradient.addColorStop(0.6, "rgba(0, 0, 0, 0.05)");
+        lightGradient.addColorStop(1, "rgba(0, 0, 0, 0)");
+
+        ctx.fillStyle = lightGradient; // Set the gradient as the fill style
+        ctx.fillRect(0, 0, canvas.width, canvas.height); // Fill the canvas with the gradient
     }
 
     window.addEventListener("resize", resizeCanvas);
