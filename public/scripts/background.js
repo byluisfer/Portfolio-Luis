@@ -72,9 +72,9 @@ document.addEventListener("DOMContentLoaded", () => {
         const lightGradient = ctx.createRadialGradient(
             canvas.width / 2,
             0,
-            50,
+            0,
             canvas.width / 2,
-            400,
+            200,
             1200
         );
 
