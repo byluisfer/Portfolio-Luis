@@ -60,8 +60,8 @@ document.addEventListener("DOMContentLoaded", () => {
         const gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
         
         gradient.addColorStop(0, "rgba(0, 0, 0, 0)");
-        gradient.addColorStop(0.5, "rgba(0, 0, 0, 0.3)");
-        gradient.addColorStop(0.8, "rgba(0, 0, 0, 0.6)");
+        gradient.addColorStop(0.5, "rgba(0, 0, 0, 0.4)");
+        gradient.addColorStop(0.9, "rgba(0, 0, 0, 0.8)");
         gradient.addColorStop(1, "rgba(0, 0, 0, 1)");
     
         ctx.fillStyle = gradient;
