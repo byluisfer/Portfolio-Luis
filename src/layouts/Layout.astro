@@ -10,11 +10,17 @@
 	<body class="bg-black">
 		<!-- Canvas to the background -->
 		<canvas id="backgroundCanvas"></canvas>
+
+		<!-- Cursor -->
+		<div class="cursor-point"></div>
 	
 		<slot />
 
 		<!-- Script to generate the background -->
 		<script src="/scripts/background.js" defer></script>
+
+		<!-- Script to generate the cursor -->
+		<script src="/scripts/cursor.js" defer></script>
 	</body>
 </html>
 
@@ -24,5 +30,15 @@
 		margin: 0;
 		width: 100%;
 		height: 100%;
+	}
+
+	.cursor-point {
+		position: fixed;
+		width: 14px;
+		height: 14px;
+		background-color: white;
+		border-radius: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 9999;
 	}
 </style>
