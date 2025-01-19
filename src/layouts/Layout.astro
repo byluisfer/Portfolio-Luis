@@ -7,8 +7,14 @@
 		<meta name="generator" content={Astro.generator} />
 		<title>Luis Fernández</title>
 	</head>
-	<body class="bg-background">
+	<body class="bg-black">
+		<!-- Canvas to the background -->
+		<canvas id="backgroundCanvas"></canvas>
+	
 		<slot />
+
+		<!-- Script to generate the background -->
+		<script src="/scripts/background.js" defer></script>
 	</body>
 </html>
 
