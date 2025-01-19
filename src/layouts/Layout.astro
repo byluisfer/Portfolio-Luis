@@ -9,7 +9,7 @@
 	</head>
 	<body class="bg-black noise-bg">
 		<!-- Canvas to the background -->
-		<canvas id="backgroundCanvas"></canvas>
+		<canvas id="backgroundCanvas" class="absolute top-0 left-0 w-full h-full -z-10"></canvas>
 
 		<!-- Cursor -->
 		<div class="cursor-point"></div>
@@ -56,5 +56,19 @@
 		background: url("/assets/noise.png");
 		opacity: 0.05;
 		pointer-events: none;
+	}
+
+	@font-face {
+		font-family: "InstrumentSerif";
+		src: url("/fonts/Instrument-Serif.woff2") format("woff2");
+		font-weight: normal;
+		font-style: normal;
+	}
+
+	@font-face {
+		font-family: "MonaSans";
+		src: url("/fonts/Mona-Sans-SemiBold.woff2") format("woff2");
+		font-weight: bold;
+		font-style: normal;
 	}
 </style>

@@ -4,8 +4,12 @@ export default {
 	theme: {
 		extend: {
 			colors: {
-				'background': '#0E0E11',
+				'background': '#0E0E11'
 			},
+			fontFamily: {
+				InstrumentSerif: ['InstrumentSerif'],
+				MonaSans: ['MonaSans']
+			}
 		},
 	},
 	plugins: [],
