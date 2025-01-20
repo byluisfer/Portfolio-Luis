@@ -5,7 +5,7 @@ export const TextRevealTW = () => {
   ]; // Define el texto como un array de líneas
 
   return (
-    <h1 className="overflow-hidden text-7xl font-InstrumentSerif text-white leading-tight mt-5 cursor-default">
+    <h1 className="overflow-hidden text-5xl sm:text-6xl md:text-7xl font-InstrumentSerif text-white leading-tight mt-5 cursor-default">
       {text.map((line, lineIndex) => (
         <div key={lineIndex} className="block">
           {line.split("").map((char, charIndex) => (
