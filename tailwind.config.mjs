@@ -14,6 +14,7 @@ export default {
 			animation: {
 				"text-reveal": "text-reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s forwards",
 				"text-up": "text-up 0.8s",
+				"scroll": "scroll 15s linear infinite",
 			  },
 			  keyframes: {
 				"text-reveal": {
@@ -34,6 +35,14 @@ export default {
 					transform: "translateY(0)",
 				  },
 				},
+				scroll: {
+					"0%": {
+					  transform: "translateX(0)",
+					},
+					"100%": {
+					  transform: "translateX(-50%)",
+					},
+				},	
 			},
 		},
 	},

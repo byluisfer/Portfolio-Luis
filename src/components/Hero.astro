@@ -1,6 +1,7 @@
 ---
 import Position from './position.tsx'
 import EmailBox from './EmailBox.astro'
+import Carrousel from './carrousel.astro'
 ---
 
 <section class="relative flex flex-col items-center justify-center h-screen text-center px-6">
@@ -11,4 +12,8 @@ import EmailBox from './EmailBox.astro'
   <Position />
 
   <EmailBox />
+
+  <div class="absolute bottom-28 w-full">
+    <Carrousel />
+  </div>
 </section>

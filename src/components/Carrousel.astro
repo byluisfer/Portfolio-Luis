@@ -1,0 +1,26 @@
+---
+const items = [
+  "Teamfähigkeit",
+  "Kommunikationsfähigkeit",
+  "Zeitmanagement",
+  "Selbständigkeit",
+  "Kollaboration",
+  "Aktives Zuhören",
+];
+---
+
+<div 
+  class="relative max-w-5xl mx-auto py-4 
+         overflow-hidden 
+         [mask-image:linear-gradient(to_right,transparent_0%,black_20%,black_80%,transparent_100%)]
+         [mask-size:100%_100%]
+         [mask-repeat:no-repeat]"
+>
+  <div class="flex w-max whitespace-nowrap animate-scroll">
+    {items.concat(items).map((item) => (
+      <span class="mx-10 text-3xl italic font-InstrumentSerif text-white opacity-80">
+        {item}
+      </span>
+    ))}
+  </div>
+</div>
