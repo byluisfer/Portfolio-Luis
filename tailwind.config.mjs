@@ -4,7 +4,8 @@ export default {
 	theme: {
 		extend: {
 			colors: {
-				'background': '#0E0E11'
+				'background': '#0E0E11',
+				'nose': '##1A1A1A'
 			},
 			fontFamily: {
 				InstrumentSerif: ['InstrumentSerif'],
