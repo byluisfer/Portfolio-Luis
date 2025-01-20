@@ -5,7 +5,7 @@ export default {
 		extend: {
 			colors: {
 				'background': '#0E0E11',
-				'nose': '##1A1A1A'
+				'nose': '#1A1A1A'
 			},
 			fontFamily: {
 				InstrumentSerif: ['InstrumentSerif'],
