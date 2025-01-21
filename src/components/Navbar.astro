@@ -1,0 +1,61 @@
+<nav class="fixed z-40 top-6 left-1/2 transform -translate-x-1/2 bg-navbarBG border border-navbarBorder shadow-lg rounded-full flex items-center justify-around w-[85%] md:w-3/4 lg:w-[50%] max-w-xl h-14">
+
+    <!-- Animate indicator -->
+    <div id="active-indicator" class="absolute top-0 left-0 bg-navbarBorder rounded-full transition-all duration-300 ease-in-out">
+        <!-- Led line -->
+        <div id="active-indicator-line" class="absolute top-[-8px] left-1/2 -translate-x-1/2 w-[32px] h-[3px] bg-white rounded-full shadow-[0_0_8px_3px_rgba(255,255,255,0.4)]"></div>
+    </div>
+
+    <!-- Navigation sections -->
+    <a href="#aboutMe" class="nav-link relative z-10 px-4 py-2 rounded-full text-white font-medium h-full flex items-center text-sm md:text-base">
+      About Me
+    </a>
+    <a href="#skills" class="nav-link relative z-10 px-4 py-2 rounded-full text-white font-medium h-full flex items-center text-sm md:text-base">
+      Skills
+    </a>
+    <a href="#education" class="nav-link relative z-10 px-4 py-2 rounded-full text-white font-medium h-full flex items-center text-sm md:text-base">
+      Education
+    </a>
+    <a href="#projects" class="nav-link relative z-10 px-4 py-2 rounded-full text-white font-medium h-full flex items-center text-sm md:text-base">
+      Projects
+    </a>
+    <a href="#contact" class="nav-link relative z-10 px-4 py-2 rounded-full text-white font-medium h-full flex items-center text-sm md:text-base">
+      Contact
+    </a>
+</nav>
+  
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const indicator = document.getElementById("active-indicator");
+        const links = document.querySelectorAll(".nav-link");
+
+        function updateIndicator(link: HTMLAnchorElement) {
+            if (!indicator) return;
+
+            const linkWidth = link.offsetWidth;
+            const linkHeight = link.offsetHeight;
+            const linkLeft = link.offsetLeft;
+            const newHeight = linkHeight - 10;
+
+            indicator.style.width = `${linkWidth}px`;
+            indicator.style.height = `${newHeight}px`;
+
+            // Calculate an offset to center the indicator vertically
+            const verticalOffset = (linkHeight - newHeight) / 2;
+
+            // Translate in X and Y to align correctly
+            indicator.style.transform = `translate(${linkLeft}px, ${verticalOffset}px)`;
+        }
+
+        // Start always on About Me
+        const firstLink = document.querySelector(".nav-link") as HTMLAnchorElement | null;
+        if (firstLink) updateIndicator(firstLink);
+        
+        // Add click event to each link
+        links.forEach((link) => {
+            link.addEventListener("click", function () {
+                updateIndicator(link as HTMLAnchorElement);
+            });
+        });
+    });
+</script>
