@@ -8,10 +8,13 @@ export default {
 				'nose': '#1A1A1A',
 				'navbarBG': '#2D2D2D',
 				'navbarBorder': '#414141',
+				'accent': '#5A5962',
 			},
 			fontFamily: {
 				InstrumentSerif: ['InstrumentSerif'],
-				MonaSans: ['MonaSans']
+				MonaSans: ['MonaSans'],
+				InterTight: ['InterTight'],
+				NyghtSerif: ['NyghtSerif'],
 			},
 			animation: {
 				"text-reveal": "text-reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s forwards",
