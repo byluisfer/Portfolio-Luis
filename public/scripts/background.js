@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
         
         gradient.addColorStop(0, "rgba(0, 0, 0, 0)");
         gradient.addColorStop(0.5, "rgba(0, 0, 0, 0.4)");
-        gradient.addColorStop(0.9, "rgba(0, 0, 0, 0.8)");
+        gradient.addColorStop(0.9, "rgba(0, 0, 0, 0.9)");
         gradient.addColorStop(1, "rgba(0, 0, 0, 1)");
     
         ctx.fillStyle = gradient;

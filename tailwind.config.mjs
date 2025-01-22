@@ -9,6 +9,7 @@ export default {
 				'navbarBG': '#2D2D2D',
 				'navbarBorder': '#414141',
 				'accent': '#5A5962',
+				'terciario': '#727272',
 			},
 			fontFamily: {
 				InstrumentSerif: ['InstrumentSerif'],
