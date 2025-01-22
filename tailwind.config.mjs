@@ -10,6 +10,7 @@ export default {
 				'navbarBorder': '#414141',
 				'accent': '#5A5962',
 				'terciario': '#727272',
+				'quatenario': '#979797',
 			},
 			fontFamily: {
 				InstrumentSerif: ['InstrumentSerif'],
