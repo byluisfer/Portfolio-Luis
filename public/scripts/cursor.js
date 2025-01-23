@@ -1,9 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
     const cursorDot = document.querySelector(".cursor-point");
+    const projectCards = document.querySelectorAll(".proyectoCard");
 
-    let mouseX = 0, mouseY = 0; // Position of the mouse
-    let dotX = 0, dotY = 0; // Position of the point
-    const delay = 0.1; // Speed of the point
+    let mouseX = 0, mouseY = 0;
+    let dotX = 0, dotY = 0;
+    const delay = 0.1;
 
     document.addEventListener("mousemove", (e) => {
         mouseX = e.clientX;
@@ -11,16 +12,29 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     function animateCursor() {
-        // Smooth interpolation: move `dotX` and `dotY` closer to `mouseX` and `mouseY`
         dotX += (mouseX - dotX) * delay;
         dotY += (mouseY - dotY) * delay;
 
-        // Add the new coordinates to the point
         cursorDot.style.left = `${dotX}px`;
         cursorDot.style.top = `${dotY}px`;
 
-        requestAnimationFrame(animateCursor); // Call the function on each frame
+        requestAnimationFrame(animateCursor);
     }
 
-    animateCursor(); // Start the animation
+    animateCursor();
+
+    // Change the hover cursor
+    projectCards.forEach((card) => {
+        card.addEventListener("mouseenter", () => {
+            cursorDot.style.width = "60px";
+            cursorDot.style.height = "60px";
+            cursorDot.style.background = "url('/assets/OpenCursor.png') center/contain no-repeat";
+        });
+
+        card.addEventListener("mouseleave", () => {
+            cursorDot.style.width = "14px";
+            cursorDot.style.height = "14px";
+            cursorDot.style.background = "white";
+        });
+    });
 });
