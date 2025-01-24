@@ -67,41 +67,22 @@ const AboutMeContent = () => {
 
         {/* Stack */}
         <div className="relative bg-nose border-2 border-navbarBorder p-10 rounded-3xl shadow-md text-white overflow-hidden">
-          {/* Ligth effect on background */}
+          {/* Efecto de luz en el fondo */}
           <div className="absolute inset-0 bg-[radial-gradient(circle,rgba(255,255,255,0.1)_0%,rgba(0,0,0,0)_100%)]"></div>
 
-          {/* Noise on background */}
+          {/* Noise en el fondo */}
           <div
             className="absolute inset-0 opacity-30"
             style={{ backgroundImage: "url('/assets/noise_2.png')", backgroundSize: "cover" }}
           ></div>
 
-          {/* Title */}
+          {/* Título */}
           <div className="flex items-center gap-3 relative">
-            {/* Punto LED */}
             <div className="w-3 h-3 bg-white rounded-full shadow-[0_0_10px_rgba(255,255,255,1.0)]"></div>
-
-            {/* Texto del título */}
             <h2 className="text-sm uppercase font-bold text-white opacity-50 tracking-[0.1em]">
               Stack
             </h2>
           </div>
-
-          <p className="text-gray-300 mt-6 relative">
-            Ich bin<strong className="text-white"> Luis Fernández Da Silva </strong>, 18 Jahre alt und vor vier Jahren von Spanien in die Schweiz gezogen, um mein Studium zu vertiefen. 
-          </p>
-          <br />
-          <p className="text-gray-300 relative">
-          Ich habe mich schon immer für<strong className="text-white"> Technologie begeistert</strong>, und als ich ihr unendliches Potenzial entdeckte, alles Mögliche zu entwicklen, beschloss ich,<strong className="text-white"> Applikationsentwicklung zu studieren.</strong>
-          </p>
-          <br />
-          <p className="text-gray-300 relative">
-          Ich befinde mich derzeit im<strong className="text-white"> zweiten Jahr meines Studiums an der CsBe</strong>, wo ich<strong className="text-white"> grundlegende Kenntnisse im Frontend und Backend-Entwicklung</strong> gesammelt habe.
-          </p>
-          <br />
-          <p className="text-gray-300 relative">
-            Ich bin auf der Suche nach einer<strong className="text-white"> Praktikumsstelle als Applikationsentwicklung</strong>, bei der ich mein Wissen anwenden und meine Ausbildung abschliessen kann.
-          </p>
         </div>
 
         <div className="relative bg-nose border-2 border-navbarBorder p-10 rounded-3xl shadow-md text-white overflow-hidden">
