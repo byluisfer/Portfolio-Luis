@@ -41,31 +41,81 @@ const AboutMeContent = () => {
             My Story
           </h2>
           <p className="text-gray-300 relative">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.<strong className="text-white"> Sed gravida magna at leo tincidunt congue.</strong> Duis eu dui tincidunt nisi fermentum volutpat eget nec justo.
+            Ich bin<strong className="text-white"> Luis Fernández Da Silva </strong>, 18 Jahre alt und vor vier Jahren von Spanien in die Schweiz gezogen, um mein Studium zu vertiefen. 
           </p>
           <br />
           <p className="text-gray-300 relative">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.<strong className="text-white"> Sed gravida magna at leo tincidunt congue.</strong> Duis eu dui tincidunt nisi fermentum volutpat eget nec justo.
+          Ich habe mich schon immer für<strong className="text-white"> Technologie begeistert</strong>, und als ich ihr unendliches Potenzial entdeckte, alles Mögliche zu entwicklen, beschloss ich,<strong className="text-white"> Applikationsentwicklung zu studieren.</strong>
           </p>
           <br />
           <p className="text-gray-300 relative">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.<strong className="text-white"> Sed gravida magna at leo tincidunt congue.</strong> Duis eu dui tincidunt nisi fermentum volutpat eget nec justo.
+          Ich befinde mich derzeit im<strong className="text-white"> zweiten Jahr meines Studiums an der CsBe</strong>, wo ich<strong className="text-white"> grundlegende Kenntnisse im Frontend und Backend-Entwicklung</strong> gesammelt habe.
           </p>
           <br />
           <p className="text-gray-300 relative">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.<strong className="text-white"> Sed gravida magna at leo tincidunt congue.</strong> Duis eu dui tincidunt nisi fermentum volutpat eget nec justo.
+            Ich bin auf der Suche nach einer<strong className="text-white"> Praktikumsstelle als Applikationsentwicklung</strong>, bei der ich mein Wissen anwenden und meine Ausbildung abschliessen kann.
           </p>
         </div>
 
-        {/* Other box (not styled yet) */}
-        {[2, 3, 4].map((item) => (
+        <div className="relative bg-nose border-2 border-navbarBorder p-10 rounded-3xl shadow-md text-white overflow-hidden">
+          {/* Ligth effect on background */}
+          <div className="absolute inset-0 bg-[radial-gradient(circle,rgba(255,255,255,0.1)_0%,rgba(0,0,0,0)_100%)]"></div>
+
+          {/* Noise on background */}
           <div
-            key={item}
-            className="bg-gray-800 p-6 rounded-3xl shadow-md text-white h-[300px]"
-          >
-            <p className="text-lg font-medium">Test</p>
-          </div>
-        ))}
+            className="absolute inset-0 opacity-30"
+            style={{ backgroundImage: "url('/assets/noise_2.png')", backgroundSize: "cover" }}
+          ></div>
+
+          <h2 className="text-3xl font-NyghtSerif italic font-bold mb-4 relative">
+            My Story
+          </h2>
+          <p className="text-gray-300 relative">
+            Ich bin<strong className="text-white"> Luis Fernández Da Silva </strong>, 18 Jahre alt und vor vier Jahren von Spanien in die Schweiz gezogen, um mein Studium zu vertiefen. 
+          </p>
+          <br />
+          <p className="text-gray-300 relative">
+          Ich habe mich schon immer für<strong className="text-white"> Technologie begeistert</strong>, und als ich ihr unendliches Potenzial entdeckte, alles Mögliche zu entwicklen, beschloss ich,<strong className="text-white"> Applikationsentwicklung zu studieren.</strong>
+          </p>
+          <br />
+          <p className="text-gray-300 relative">
+          Ich befinde mich derzeit im<strong className="text-white"> zweiten Jahr meines Studiums an der CsBe</strong>, wo ich<strong className="text-white"> grundlegende Kenntnisse im Frontend und Backend-Entwicklung</strong> gesammelt habe.
+          </p>
+          <br />
+          <p className="text-gray-300 relative">
+            Ich bin auf der Suche nach einer<strong className="text-white"> Praktikumsstelle als Applikationsentwicklung</strong>, bei der ich mein Wissen anwenden und meine Ausbildung abschliessen kann.
+          </p>
+        </div>
+
+        <div className="relative bg-nose border-2 border-navbarBorder p-10 rounded-3xl shadow-md text-white overflow-hidden">
+          {/* Ligth effect on background */}
+          <div className="absolute inset-0 bg-[radial-gradient(circle,rgba(255,255,255,0.1)_0%,rgba(0,0,0,0)_100%)]"></div>
+
+          {/* Noise on background */}
+          <div
+            className="absolute inset-0 opacity-30"
+            style={{ backgroundImage: "url('/assets/noise_2.png')", backgroundSize: "cover" }}
+          ></div>
+
+          <h2 className="text-3xl font-NyghtSerif italic font-bold mb-4 relative">
+            My Story
+          </h2>
+          <p className="text-gray-300 relative">
+            Ich bin<strong className="text-white"> Luis Fernández Da Silva </strong>, 18 Jahre alt und vor vier Jahren von Spanien in die Schweiz gezogen, um mein Studium zu vertiefen. 
+          </p>
+          <br />
+          <p className="text-gray-300 relative">
+          Ich habe mich schon immer für<strong className="text-white"> Technologie begeistert</strong>, und als ich ihr unendliches Potenzial entdeckte, alles Mögliche zu entwicklen, beschloss ich,<strong className="text-white"> Applikationsentwicklung zu studieren.</strong>
+          </p>
+          <br />
+          <p className="text-gray-300 relative">
+          Ich befinde mich derzeit im<strong className="text-white"> zweiten Jahr meines Studiums an der CsBe</strong>, wo ich<strong className="text-white"> grundlegende Kenntnisse im Frontend und Backend-Entwicklung</strong> gesammelt habe.
+          </p>
+          <br />
+          <p className="text-gray-300 relative">
+            Ich bin auf der Suche nach einer<strong className="text-white"> Praktikumsstelle als Applikationsentwicklung</strong>, bei der ich mein Wissen anwenden und meine Ausbildung abschliessen kann.
+          </p>
+        </div>
       </div>
     </div>
   );
