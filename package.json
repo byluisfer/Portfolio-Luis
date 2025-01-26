@@ -11,9 +11,11 @@
   "dependencies": {
     "@astrojs/react": "^4.1.5",
     "@astrojs/tailwind": "^5.1.4",
+    "@react-spring/web": "^9.7.5",
     "@types/react": "^19.0.7",
     "@types/react-dom": "^19.0.3",
     "astro": "^5.1.6",
+    "cobe": "^0.6.3",
     "framer-motion": "^12.0.5",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
