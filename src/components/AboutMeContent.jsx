@@ -161,6 +161,46 @@ const AboutMeContent = () => {
             <Globe />
           </div>
         </div>
+
+        {/* Languages */}
+        <div className="relative bg-nose border-2 border-navbarBorder rounded-3xl shadow-md text-white overflow-hidden p-10">
+          {/* Efecto de luz */}
+          <div className="absolute inset-0 bg-[radial-gradient(circle,rgba(255,255,255,0.1)_0%,rgba(0,0,0,0)_100%)]"></div>
+
+          {/* Noise en el fondo */}
+          <div
+            className="absolute inset-0 opacity-30"
+            style={{ backgroundImage: "url('/assets/noise_2.png')", backgroundSize: "cover" }}
+          ></div>
+
+          {/* Título */}
+          <div className="flex items-center gap-3 relative mb-6">
+            <div className="w-3 h-3 bg-white rounded-full shadow-[0_0_10px_rgba(255,255,255,1.0)]"></div>
+            <h2 className="text-sm uppercase font-bold text-white opacity-50 tracking-[0.1em]">
+              Sprachen
+            </h2>
+          </div>
+
+          <div className="flex flex-col md:flex-row justify-between gap-6">
+            {/* German */}
+            <div className="bg-background border-2 border-navbarBorder rounded-xl shadow-md p-6 w-full md:w-1/3 text-center">
+              <h3 className="text-xl font-bold text-white">Deutsch</h3>
+              <p className="text-quatenario">Fliessend</p>
+            </div>
+
+            {/* Inglish */}
+            <div className="bg-background border-2 border-navbarBorder rounded-xl shadow-md p-6 w-full md:w-1/3 text-center">
+              <h3 className="text-xl font-bold text-white">Englisch</h3>
+              <p className="text-quatenario">Fliessend</p>
+            </div>
+
+            {/* Spanish */}
+            <div className="bg-background border-2 border-navbarBorder rounded-xl shadow-md p-6 w-full md:w-1/3 text-center">
+              <h3 className="text-xl font-bold text-white">Spanisch</h3>
+              <p className="text-quatenario">Muttersprache</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
