@@ -1,5 +1,14 @@
 import Globe from "./Globe.jsx";
 
+const stackIcons = [
+  "/assets/icons/chatgpt.png",
+  "/assets/icons/figma.png",
+  "/assets/icons/framer.png",
+  "/assets/icons/aftereffects.png",
+  "/assets/icons/clerk.png",
+  "/assets/icons/notion.png",
+];
+
 const AboutMeContent = () => {
   return (
     <div className="flex flex-col md:flex-row max-w-5xl mx-auto mt-12 relative">
@@ -26,7 +35,7 @@ const AboutMeContent = () => {
       </div>
 
       {/* Container mit all the box on the right */}
-      <div className="w-full md:w-2/3 flex flex-col gap-6">
+      <div className="w-full md:w-7/12 flex flex-col gap-6">
 
         {/* My Story */}
         <div className="relative bg-nose border-2 border-navbarBorder p-10 rounded-3xl shadow-md text-white overflow-hidden">
@@ -68,25 +77,67 @@ const AboutMeContent = () => {
         </div>
 
         {/* Stack */}
-        <div className="relative bg-nose border-2 border-navbarBorder p-10 rounded-3xl shadow-md text-white overflow-hidden">
+        <div className="relative bg-nose border-2 border-navbarBorder p-10 rounded-3xl shadow-md text-white overflow-hidden w-full">
           {/* Efecto de luz en el fondo */}
           <div className="absolute inset-0 bg-[radial-gradient(circle,rgba(255,255,255,0.1)_0%,rgba(0,0,0,0)_100%)]"></div>
 
           {/* Noise en el fondo */}
-          <div
-            className="absolute inset-0 opacity-30"
-            style={{ backgroundImage: "url('/assets/noise_2.png')", backgroundSize: "cover" }}
-          ></div>
+          <div className="absolute inset-0 opacity-30" style={{ backgroundImage: "url('/assets/noise_2.png')", backgroundSize: "cover" }}></div>
 
           {/* Título */}
           <div className="flex items-center gap-3 relative">
             <div className="w-3 h-3 bg-white rounded-full shadow-[0_0_10px_rgba(255,255,255,1.0)]"></div>
             <h2 className="text-sm uppercase font-bold text-white opacity-50 tracking-[0.1em]">
-              Stack
+              Meine Stack
             </h2>
+          </div>
+
+          {/* Carrusel with the apps icons */}
+          <div
+            className="relative w-full mx-auto p-4 overflow-hidden mt-4"
+            style={{
+              maskImage:
+                "linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%)",
+              maskSize: "100% 100%",
+              maskRepeat: "no-repeat",
+              WebkitMaskImage:
+                "linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%)",
+            }}
+          >
+            <div className="flex w-max whitespace-nowrap animate-scroll items-center">
+              {[
+                "/assets/Vscode.png",
+                "/assets/Figma.png",
+                "/assets/Github.png",
+                "/assets/Notion.png",
+                "/assets/Docker.png",
+                "/assets/Warp.png",
+              ]
+                .concat([
+                  "/assets/Vscode.png",
+                  "/assets/Figma.png",
+                  "/assets/Github.png",
+                  "/assets/Notion.png",
+                  "/assets/Docker.png",
+                  "/assets/Warp.png",
+                ])
+                .map((icon, index) => (
+                  <div
+                    key={index}
+                    className="h-16 w-16 mx-3 bg-nose rounded-xl flex justify-center items-center shadow-md"
+                  >
+                    <img
+                      src={icon}
+                      alt={`Stack Icon ${index}`}
+                      className="h-10 w-10 object-contain"
+                    />
+                  </div>
+                ))}
+            </div>
           </div>
         </div>
 
+        {/* Location */}
         <div className="relative bg-nose border-2 border-navbarBorder rounded-3xl shadow-md text-white overflow-hidden">
           {/* Efecto de luz */}
           <div className="absolute inset-0 bg-[radial-gradient(circle,rgba(255,255,255,0.1)_0%,rgba(0,0,0,0)_100%)]"></div>
