@@ -1,14 +1,22 @@
-<section class="mt-14">
+---
+import EducationTimeline from './EducationTimeline.jsx';
+---
+
+<section id="Education" class="mt-28">
     <div class="relative text-white flex flex-col items-center justify-center">
 
       <h2 class="text-lg font-InterTight tracking-widest text-white drop-shadow-[0_0_6px_rgba(255,255,255,0.8)] items-center">
         <span class="mr-3">✦</span>
-        EDUCATION
+          AUSBILDUNG
         <span class="ml-3">✦</span>
       </h2>
       
       <h3 class="text-5xl font-NyghtSerif mt-4 text-transparent bg-clip-text px-2 bg-gradient-to-b from-white to-accent drop-shadow-[0_0_6px_rgba(255,255,255,0.3 )]">
-        My university career
+        Meine theoretischen Studien
       </h3>
     </div>
-  </section>
+
+    <div class="mt-16">
+      <EducationTimeline client:load />
+    </div>
+</section>
