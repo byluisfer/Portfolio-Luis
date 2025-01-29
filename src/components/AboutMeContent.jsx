@@ -11,7 +11,7 @@ const stackIcons = [
 
 const AboutMeContent = () => {
   return (
-    <div className="flex flex-col md:flex-row max-w-5xl mx-auto mt-12 relative">
+    <div className="flex flex-col md:flex-row max-w-6xl mx-auto mt-12 relative">
       {/* Fixed photo on the left with texts */}
       <div className="w-full md:w-1/2 sticky top-28 self-start">
         <img
