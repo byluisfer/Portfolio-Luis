@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function touchMove(event) {
       event.preventDefault();
       let touchY = event.touches[0].clientY;
-      let delta = (touchStartY - touchY) * 0.6;
+      let delta = (touchStartY - touchY) * 1.4;
       updateScroll(delta);
       touchStartY = touchY;
   }
