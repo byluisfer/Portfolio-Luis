@@ -11,4 +11,88 @@
         Meine Grundkenntnisse
       </h3>
     </div>
-  </section>
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 sm:gap-10 lg:gap-14 text-white text-center px-4 md:px-8 lg:px-52 mt-20">
+      <!-- HTML -->
+      <div class="flex flex-col items-center justify-center group">
+          <img src="/assets/Html.svg" alt="HTML" loading="lazy" class="h-16 w-16 md:h-24 md:w-24 group-hover:translate-y-[-10px] group-hover:filter-none transition-all duration-300 ease-in-out">
+          <span class="text-white text-sm sm:text-lg font-mplus mt-2 opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out">HTML</span>
+      </div>
+      <!-- CSS -->
+      <div class="flex flex-col items-center justify-center group">
+          <img src="/assets/Css.svg" alt="CSS" loading="lazy" class="h-16 w-16 md:h-24 md:w-24 group-hover:translate-y-[-10px] group-hover:filter-none transition-all duration-300 ease-in-out">
+          <span class="text-white text-sm sm:text-lg font-mplus mt-2 opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out">CSS</span>
+      </div>
+      <!-- JavaScript -->
+      <div class="flex flex-col items-center justify-center group">
+          <img src="/assets/Javascript.svg" alt="JavaScript" loading="lazy" class="h-16 w-16 md:h-24 md:w-24 group-hover:translate-y-[-10px] group-hover:filter-none transition-all duration-300 ease-in-out">
+          <span class="text-white text-sm sm:text-lg font-mplus mt-2 opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out">JavaScript</span>
+      </div>
+      <!-- Python -->
+      <div class="flex flex-col items-center justify-center group">
+          <img src="/assets/Python.svg" alt="Python" loading="lazy" class="h-16 w-16 md:h-24 md:w-24 group-hover:translate-y-[-10px] group-hover:filter-none transition-all duration-300 ease-in-out">
+          <span class="text-white text-sm sm:text-lg font-mplus mt-2 opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out">Python</span>
+      </div>
+      <!-- Tailwind -->
+      <div class="flex flex-col items-center justify-center group">
+          <img src="/assets/tailwind.svg" alt="Tailwind CSS" loading="lazy" class="h-16 w-16 md:h-24 md:w-24 group-hover:translate-y-[-10px] group-hover:filter-none transition-all duration-300 ease-in-out">
+          <span class="text-white text-sm sm:text-lg font-mplus mt-2 opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out">Tailwind</span>
+      </div>
+      <!-- Jest -->
+      <div class="flex flex-col items-center justify-center group">
+          <img src="/assets/jest.svg" alt="Jest" loading="lazy" class="h-16 w-16 md:h-24 md:w-24 group-hover:translate-y-[-10px] group-hover:filter-none transition-all duration-300 ease-in-out">
+          <span class="text-white text-sm sm:text-lg font-mplus mt-2 opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out">Jest</span>
+      </div>
+      <!-- Astro -->
+      <div class="flex flex-col items-center justify-center group">
+          <img src="/assets/astro.svg" alt="Astro" loading="lazy" class="h-16 w-16 md:h-24 md:w-24 group-hover:translate-y-[-10px] group-hover:filter-none transition-all duration-300 ease-in-out">
+          <span class="text-white text-sm sm:text-lg font-mplus mt-2 opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out">Astro</span>
+      </div>
+      <!-- React -->
+      <div class="flex flex-col items-center justify-center group">
+          <img src="/assets/react.svg" alt="React" loading="lazy" class="h-16 w-16 md:h-24 md:w-24 group-hover:translate-y-[-10px] group-hover:filter-none transition-all duration-300 ease-in-out">
+          <span class="text-white text-sm sm:text-lg font-mplus mt-2 opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out">React</span>
+      </div>
+      <!-- MongoDB -->
+      <div class="flex flex-col items-center justify-center group">
+          <img src="/assets/mongodb.svg" alt="MongoDB" loading="lazy" class="h-16 w-16 md:h-24 md:w-24 group-hover:translate-y-[-10px] group-hover:filter-none transition-all duration-300 ease-in-out">
+          <span class="text-white text-sm sm:text-lg font-mplus mt-2 opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out">MongoDB</span>
+      </div>
+      <!-- MySQL -->
+      <div class="flex flex-col items-center justify-center group">
+          <img src="/assets/mysql.svg" alt="MySQL" loading="lazy" class="h-16 w-16 md:h-24 md:w-24 group-hover:translate-y-[-10px] group-hover:filter-none transition-all duration-300 ease-in-out">
+          <span class="text-white text-sm sm:text-lg font-mplus mt-2 opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out">MySQL</span>
+      </div>
+    </div>
+</section>
+
+<style>
+  .group {
+      transition: transform 0.3s ease-in-out;
+  }
+
+  .group:hover {
+      transform: translateY(-10px);
+  }
+
+  .group:hover img {
+      transform: translateY(-20px);
+  }
+
+  img {
+      filter: brightness(0) invert(1);
+  }
+
+  .group span {
+      opacity: 0;
+      margin-top: 0;
+  }
+
+  .group:hover span {
+      opacity: 1;
+  }
+
+  .group:hover img {
+      filter: none;
+  }
+</style>
