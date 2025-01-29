@@ -14,7 +14,7 @@ const EducationTimeline = () => {
         iconStyle={{ background: "#fff" }}
         icon={
           <img
-            src="/csbe.webp"
+            src="/assets/csbe.webp"
             alt="Icon"
             loading="lazy"
             style={{
@@ -56,7 +56,7 @@ const EducationTimeline = () => {
         iconStyle={{ background: "#fff" }}
         icon={
           <img
-            src="/morillon.webp"
+            src="/assets/morillon.webp"
             alt="Icon"
             loading="lazy"
             style={{
@@ -98,7 +98,7 @@ const EducationTimeline = () => {
         iconStyle={{ background: "#fff" }}
         icon={
           <img
-            src="/cristoRey.webp"
+            src="/assets/cristoRey.webp"
             alt="Icon"
             loading="lazy"
             style={{
