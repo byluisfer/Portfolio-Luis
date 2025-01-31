@@ -3,14 +3,16 @@
     <img src="/assets/email.svg" alt="Email icon" class="w-5 h-5 opacity-30">
 
     <!-- Email -->
-    <p class="text-white text-sm">contact@luisfernandez.info</p>
+    <p id="EmailText" class="text-white text-sm">contact@luisfernandez.info</p>
 
     <!-- Copy Button -->
-    <button class="bg-nose px-2 py-1 rounded-full text-white text-sm cursor-pointer">
+    <button id="CopyBtn" class="bg-nose px-2 py-1 rounded-full text-white text-sm cursor-pointer">
         Kopieren
     </button>
 </div>
 
 <button class="relative flex sm:hidden mt-10 h-12 w-36 rounded-full items-center justify-center overflow-hidden bg-white text-black shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-gray-400 before:duration-500 before:ease-out hover:shadow-gray-700 hover:before:h-56 hover:before:w-56">
     <span class="relative z-10 text-sm">Sprechen wir</span>
-  </button>
+</button>
+
+<script src="../../public/scripts/CopyEmail.js"></script>
