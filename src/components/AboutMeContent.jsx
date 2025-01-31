@@ -1,41 +1,19 @@
 import Globe from "./Globe.jsx";
 
-const stackIcons = [
-  "/assets/icons/chatgpt.png",
-  "/assets/icons/figma.png",
-  "/assets/icons/framer.png",
-  "/assets/icons/aftereffects.png",
-  "/assets/icons/clerk.png",
-  "/assets/icons/notion.png",
-];
-
 const AboutMeContent = () => {
   return (
     <div className="flex flex-col md:flex-row max-w-6xl mx-auto mt-12 relative">
       {/* Fixed photo on the left with texts */}
-      <div className="w-full md:w-1/2 sticky top-28 self-start">
+      <div className="w-full md:w-1/2 md:sticky top-28 self-start">
         <img
           src="/assets/perfil_photo.png"
           alt="Your Profile"
           className="rounded-3xl shadow-lg h-[525px] object-cover"
         />
-
-        {/* Container witch the texts on the image center to the right */}
-        <div className="absolute bottom-6 right-8 flex flex-col gap-4 items-end pr-4">
-          <div className="bg-navbarBorder text-white font-InterTight text-sm px-2 py-1 rounded-2xl w-max ml-auto">
-            🟢 Verfügbar für Arbeiten
-          </div>
-          <div className="bg-navbarBorder text-white font-InterTight text-sm px-2 py-1 rounded-2xl w-max ml-auto">
-            💻 Anwendungsentwickler in der Schweiz
-          </div>
-          <div className="bg-navbarBorder text-white font-InterTight text-sm px-2 py-1 rounded-2xl w-max ml-auto">
-            🚀 Jeden Tag besser in der Softwareentwicklung
-          </div>
-        </div>
       </div>
 
       {/* Container mit all the box on the right */}
-      <div className="w-full md:w-7/12 flex flex-col gap-6">
+      <div className="w-full md:w-7/12 flex mt-6 sm:mt-0 flex-col gap-6">
 
         {/* My Story */}
         <div className="relative bg-nose border-2 border-navbarBorder p-10 rounded-3xl shadow-md text-white overflow-hidden">
@@ -59,19 +37,19 @@ const AboutMeContent = () => {
             </h2>
           </div>
 
-          <p className="text-gray-300 mt-6 relative">
+          <p className="text-gray-300 text-base sm:text-lg mt-6 relative">
             Ich bin<strong className="text-white"> Luis Fernández Da Silva </strong>, 18 Jahre alt und vor vier Jahren von Spanien in die Schweiz gezogen, um mein Studium zu vertiefen. 
           </p>
           <br />
-          <p className="text-gray-300 relative">
+          <p className="text-gray-300 text-base sm:text-lg relative">
           Ich habe mich schon immer für<strong className="text-white"> Technologie begeistert</strong>, und als ich ihr unendliches Potenzial entdeckte, alles Mögliche zu entwicklen, beschloss ich,<strong className="text-white"> Applikationsentwicklung zu studieren.</strong>
           </p>
           <br />
-          <p className="text-gray-300 relative">
+          <p className="text-gray-300 text-base sm:text-lg relative">
           Ich befinde mich derzeit im<strong className="text-white"> zweiten Jahr meines Studiums an der CsBe</strong>, wo ich<strong className="text-white"> grundlegende Kenntnisse im Frontend und Backend-Entwicklung</strong> gesammelt habe.
           </p>
           <br />
-          <p className="text-gray-300 relative">
+          <p className="text-gray-300 text-base sm:text-lg relative">
             Ich bin auf der Suche nach einer<strong className="text-white"> Praktikumsstelle als Applikationsentwicklung</strong>, bei der ich mein Wissen anwenden und meine Ausbildung abschliessen kann.
           </p>
         </div>
@@ -157,7 +135,7 @@ const AboutMeContent = () => {
           </div>
 
           {/* Render the globe */}
-          <div className="relative w-full h-[300px] flex justify-center items-end overflow-hidden">
+          <div className="relative w-full h-[165px] sm:h-[300px] flex justify-center items-end overflow-hidden">
             <Globe />
           </div>
         </div>
@@ -181,21 +159,21 @@ const AboutMeContent = () => {
             </h2>
           </div>
 
-          <div className="flex flex-col md:flex-row justify-between gap-6">
+          <div className="flex flex-col md:flex-row justify-between gap-2 sm:gap-6">
             {/* German */}
-            <div className="bg-background border-2 border-navbarBorder rounded-xl shadow-md p-6 w-full md:w-1/3 text-center">
+            <div className="bg-background border-2 border-navbarBorder rounded-xl shadow-md p-4 w-full md:w-1/3 text-center">
               <h3 className="text-xl font-bold text-white">Deutsch</h3>
               <p className="text-quatenario">Fliessend</p>
             </div>
 
             {/* Inglish */}
-            <div className="bg-background border-2 border-navbarBorder rounded-xl shadow-md p-6 w-full md:w-1/3 text-center">
+            <div className="bg-background border-2 border-navbarBorder rounded-xl shadow-md p-4 w-full md:w-1/3 text-center">
               <h3 className="text-xl font-bold text-white">Englisch</h3>
               <p className="text-quatenario">Fliessend</p>
             </div>
 
             {/* Spanish */}
-            <div className="bg-background border-2 border-navbarBorder rounded-xl shadow-md p-6 w-full md:w-1/3 text-center">
+            <div className="bg-background border-2 border-navbarBorder rounded-xl shadow-md p-4 w-full md:w-1/3 text-center">
               <h3 className="text-xl font-bold text-white">Spanisch</h3>
               <p className="text-quatenario">Muttersprache</p>
             </div>
