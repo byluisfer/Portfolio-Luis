@@ -1,0 +1,34 @@
+<section id="contact-form-section">
+    <form id="contactForm" action="https://formspree.io/f/xkgwdppg" method="POST" class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+        <div class="col-span-1 lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="col-span-1">
+                <input type="text" id="name" name="name" placeholder="Ihr Name" class="p-4 w-full bg-nose text-white placeholder-white rounded-full border-2 border-navbarBorder" required>
+            </div>
+            <div class="col-span-1">
+                <input type="email" id="email" name="email" placeholder="Ihre E-Mail" class="p-4 w-full bg-nose text-white placeholder-white rounded-full border-2 border-navbarBorder" required>
+            </div>
+            <div class="col-span-1 sm:col-span-2 lg:col-span-1">
+                <input type="text" id="subject" name="subject" placeholder="Thema" class="p-4 w-full bg-nose text-white placeholder-white rounded-full border-2 border-navbarBorder">
+            </div>
+            <div class="col-span-1 sm:col-span-2 lg:col-span-3">
+                <textarea id="message" name="message" placeholder="Ihre Nachricht" rows="8" class="p-4 w-full bg-nose text-white placeholder-white font-mplus rounded-3xl border-2 border-navbarBorder resize-none" required></textarea>
+            </div>
+        </div>
+  
+        <div class="col-span-1 lg:col-span-1 flex justify-center lg:justify-end">
+            <button type="submit" class="w-full lg:w-[300px] px-12 py-4 sm:py-6 bg-nose text-white border-2 border-navbarBorder text-base sm:text-lg rounded-3xl transition-all flex flex-col items-center justify-center">
+                <img src="/assets/sendMessage.svg" alt="Send message" class="w-6 h-6 sm:w-8 sm:h-8 mb-2">
+                <p id="submit-button">Einreichen</p>
+            </button>
+        </div>
+    </form>
+
+    <div
+    id="alert-message"
+    class="hidden fixed bottom-10 left-1/2 transform -translate-x-1/2 bg-green-700 text-white px-4 py-2 rounded-full shadow-lg text-center"
+    data-success-message="Die Nachricht wurde erfolgreich gesendet!"
+    >
+    </div>
+</section>
+
+<script src="../../public/scripts/contactFormScript.js"></script>
