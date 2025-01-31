@@ -34,9 +34,9 @@ const EducationTimeline = () => {
           className="vertical-timeline-element-subtitle"
           style={{
             textShadow: `
-              0 0 5px #9D3BE4,
-              0 0 15px #9D3BE4,
-              0 0 30px #9D3BE4
+              0 0 5px #5A5962,
+              0 0 15px #5A5962,
+              0 0 30px #5A5962
             `,
           }}
         >
@@ -76,9 +76,9 @@ const EducationTimeline = () => {
           className="vertical-timeline-element-subtitle"
           style={{
             textShadow: `
-              0 0 5px #9D3BE4,
-              0 0 15px #9D3BE4,
-              0 0 30px #9D3BE4
+              0 0 5px #5A5962,
+              0 0 15px #5A5962,
+              0 0 30px #5A5962
             `,
           }}
         >
@@ -118,9 +118,9 @@ const EducationTimeline = () => {
           className="vertical-timeline-element-subtitle"
           style={{
             textShadow: `
-              0 0 5px #9D3BE4,
-              0 0 15px #9D3BE4,
-              0 0 30px #9D3BE4
+              0 0 5px #5A5962,
+              0 0 15px #5A5962,
+              0 0 30px #5A5962
             `,
           }}
         >
