@@ -2,10 +2,10 @@ export const TextRevealTW = () => {
   const text = [
     "Applikationsentwickler", 
     "in der Schweiz"
-  ]; // Define el texto como un array de líneas
+  ];
 
   return (
-    <h1 className="overflow-hidden text-4xl sm:text-6xl md:text-7xl font-InstrumentSerif text-white leading-tight mt-5 cursor-default">
+    <h1 className="overflow-hidden text-3xl sm:text-6xl md:text-7xl font-InstrumentSerif text-white leading-tight mt-5 cursor-default">
       {text.map((line, lineIndex) => (
         <div key={lineIndex} className="block">
           {line.split("").map((char, charIndex) => (
@@ -17,7 +17,7 @@ export const TextRevealTW = () => {
               {char === " " ? "\u00A0" : char}
             </span>
           ))}
-          {lineIndex < text.length - 1 && <br />} {/* Agrega un <br> excepto en la última línea */}
+          {lineIndex < text.length - 1 && <br />} {/* Add an br except in the last line */}
         </div>
       ))}
     </h1>
