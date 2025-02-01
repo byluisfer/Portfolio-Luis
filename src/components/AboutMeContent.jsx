@@ -4,12 +4,31 @@ const AboutMeContent = () => {
   return (
     <div className="flex flex-col md:flex-row max-w-6xl mx-auto mt-12 relative">
       {/* Fixed photo on the left with texts */}
-      <div className="w-full md:w-1/2 md:sticky top-28 self-start">
+      <div className="w-full md:w-1/2 md:sticky top-28 self-start flex flex-col items-center gap-4">
+        {/* Foto de Perfil */}
         <img
           src="/assets/perfil_photo.png"
           alt="Your Profile"
           className="rounded-3xl shadow-lg h-[525px] object-cover"
         />
+
+        {/* Redes Sociales (centradas debajo de la foto) */}
+        <div className="flex justify-center gap-5 -mt-16">
+          {/* GitHub */}
+          <a href="https://github.com/byluisfer" target="_blank" rel="noopener noreferrer">
+            <img src="/assets/Github.png" alt="GitHub" className="h-10 w-10 transition transform hover:scale-110" />
+          </a>
+
+          {/* LinkedIn */}
+          <a href="https://www.linkedin.com/in/luisfernandezz/" target="_blank" rel="noopener noreferrer">
+            <img src="/assets/Linkedin.svg" alt="LinkedIn" className="h-10 w-10 transition transform hover:scale-110" />
+          </a>
+
+          {/* CV */}
+          <a href="/assets/CV.pdf" target="_blank" rel="noopener noreferrer">
+            <img src="/assets/CV.svg" alt="CV" className="h-10 w-10 transition transform hover:scale-110" />
+          </a>
+        </div>
       </div>
 
       {/* Container mit all the box on the right */}
