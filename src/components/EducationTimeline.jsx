@@ -15,8 +15,11 @@ const EducationTimeline = () => {
         icon={
           <img
             src="/assets/csbe.webp"
-            alt="Icon"
+            alt="Logo CSBE"
             loading="lazy"
+            width="85"
+            height="85"
+            aria-hidden="true"
             style={{
               width: "85%",
               height: "85%",
@@ -57,8 +60,11 @@ const EducationTimeline = () => {
         icon={
           <img
             src="/assets/morillon.webp"
-            alt="Icon"
+            alt="Logo Schulhaus Morillon"
             loading="lazy"
+            width="85"
+            height="85"
+            aria-hidden="true"
             style={{
               width: "85%",
               height: "85%",
@@ -99,8 +105,11 @@ const EducationTimeline = () => {
         icon={
           <img
             src="/assets/cristoRey.webp"
-            alt="Icon"
+            alt="Logo Colegio Cristo Rey"
             loading="lazy"
+            width="85"
+            height="85"
+            aria-hidden="true"
             style={{
               width: "85%",
               height: "85%",

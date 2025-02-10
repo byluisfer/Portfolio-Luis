@@ -8,25 +8,26 @@ const AboutMeContent = () => {
         {/* Foto de Perfil */}
         <img
           src="/assets/perfil_photo.png"
-          alt="Your Profile"
+          alt="My profile photo"
           className="rounded-3xl shadow-lg h-[525px] object-cover"
+          loading="lazy"
         />
 
         {/* Redes Sociales (centradas debajo de la foto) */}
         <div className="flex justify-center gap-5 -mt-16">
           {/* GitHub */}
           <a href="https://github.com/byluisfer" target="_blank" rel="noopener noreferrer">
-            <img src="/assets/Github.png" alt="GitHub" className="h-10 w-10 transition transform hover:scale-110" />
+            <img src="/assets/Github.png" alt="GitHub" className="h-10 w-10 transition transform hover:scale-110" loading="lazy" />
           </a>
 
           {/* LinkedIn */}
           <a href="https://www.linkedin.com/in/luisfernandezz/" target="_blank" rel="noopener noreferrer">
-            <img src="/assets/Linkedin.svg" alt="LinkedIn" className="h-10 w-10 transition transform hover:scale-110" />
+            <img src="/assets/Linkedin.svg" alt="LinkedIn" className="h-10 w-10 transition transform hover:scale-110" loading="lazy" />
           </a>
 
           {/* CV */}
           <a href="/assets/CV.pdf" target="_blank" rel="noopener noreferrer">
-            <img src="/assets/CV.svg" alt="CV" className="h-10 w-10 transition transform hover:scale-110" />
+            <img src="/assets/CV.svg" alt="CV" className="h-10 w-10 transition transform hover:scale-110" loading="lazy" />
           </a>
         </div>
       </div>
@@ -127,6 +128,7 @@ const AboutMeContent = () => {
                       src={icon}
                       alt={`Stack Icon ${index}`}
                       className="h-10 w-10 object-contain"
+                      loading="lazy"
                     />
                   </div>
                 ))}
@@ -178,25 +180,25 @@ const AboutMeContent = () => {
             </h2>
           </div>
 
-          <div className="flex flex-col md:flex-row justify-between gap-2 sm:gap-6">
+          <ul className="flex flex-col md:flex-row justify-between gap-2 sm:gap-6">
             {/* German */}
-            <div className="bg-background border-2 border-navbarBorder rounded-xl shadow-md p-4 w-full md:w-1/3 text-center">
+            <li className="bg-background border-2 border-navbarBorder rounded-xl shadow-md p-4 w-full md:w-1/3 text-center">
               <h3 className="text-xl font-bold text-white">Deutsch</h3>
               <p className="text-quatenario">Fliessend</p>
-            </div>
+            </li>
 
             {/* Inglish */}
-            <div className="bg-background border-2 border-navbarBorder rounded-xl shadow-md p-4 w-full md:w-1/3 text-center">
+            <li className="bg-background border-2 border-navbarBorder rounded-xl shadow-md p-4 w-full md:w-1/3 text-center">
               <h3 className="text-xl font-bold text-white">Englisch</h3>
               <p className="text-quatenario">Fliessend</p>
-            </div>
+            </li>
 
             {/* Spanish */}
-            <div className="bg-background border-2 border-navbarBorder rounded-xl shadow-md p-4 w-full md:w-1/3 text-center">
+            <li className="bg-background border-2 border-navbarBorder rounded-xl shadow-md p-4 w-full md:w-1/3 text-center">
               <h3 className="text-xl font-bold text-white">Spanisch</h3>
               <p className="text-quatenario">Muttersprache</p>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </div>
     </div>

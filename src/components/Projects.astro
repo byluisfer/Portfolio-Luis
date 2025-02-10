@@ -1,18 +1,18 @@
 <section class="mt-20 flex flex-col items-center gap-20" id="Projects">
   <div class="relative text-white flex flex-col items-center justify-center w-full">
-    <h2 class="text-base sm:text-lg font-InterTight tracking-widest text-white drop-shadow-[0_0_6px_rgba(255,255,255,0.8)]">
+    <h3 class="text-base sm:text-lg font-InterTight tracking-widest text-white drop-shadow-[0_0_6px_rgba(255,255,255,0.8)]">
       <span class="mr-3">✦</span>
       PROJEKTE
       <span class="ml-3">✦</span>
-    </h2>
-    <h3 class="text-3xl sm:text-5xl font-NyghtSerif text-transparent bg-clip-text leading-normal bg-gradient-to-b from-white to-accent drop-shadow-[0_0_6px_rgba(255,255,255,0.3)]">
-      Einige meiner Arbeiten
     </h3>
+    <h2 class="text-3xl sm:text-5xl font-NyghtSerif text-transparent bg-clip-text leading-normal bg-gradient-to-b from-white to-accent drop-shadow-[0_0_6px_rgba(255,255,255,0.3)]">
+      Einige meiner Arbeiten
+    </h2>
   </div>
 
   <!-- Tic Tac Toe -->
   <div class="proyectoCard relative flex w-full max-w-6xl -mt-12 sm:mt-0 mx-auto bg-nose justify-center cursor-pointer rounded-2xl sm:rounded-3xl scale-[0] translate-y-56 rotate-x-[35deg] hover:cursor-pointer transition-shadow duration-700 hover:shadow-[0_0_40px_rgba(60,54,51,1)]">
-    <a href="https://github.com/byluisfer/Tic-Tac-Toe" class="relative h-auto w-auto px-10 text-white hover:shadow-lg sm:hover:shadow-2xl transition-all duration-300 group overflow-hidden" target="_blank">
+    <a href="https://github.com/byluisfer/Tic-Tac-Toe" class="relative h-auto w-auto px-10 text-white hover:shadow-lg sm:hover:shadow-2xl transition-all duration-300 group overflow-hidden" target="_blank" rel="noopener noreferrer">
   
       <div class="mt-10 relative z-10">
         <h2 class="text-2xl sm:text-3xl font-InterTight">Tic Tac Toe mit KI</h2>
@@ -21,14 +21,14 @@
           <span class="text-quatenario font-InterTight text-sm sm:text-xl">- Dies ist mein eigenes Tic-Tac-Toe-Spiel mit KI-Modus</span>
         </p>
 
-        <img src="/assets/TicTacToe.webp" alt="Tic Tac Toe" loading="lazy" class="w-full h-full object-cover mt-8 rounded-t-2xl"/>
+        <img src="/assets/TicTacToe.webp" alt="Tic Tac Toe" loading="lazy" width="600" height="400" class="w-full h-full object-cover mt-8 rounded-t-2xl"/>
       </div>
     </a>
   </div>
 
   <!-- Real Madrid -->
   <div class="proyectoCard relative flex w-full max-w-6xl -mt-12 sm:mt-0 mx-auto bg-nose justify-center cursor-pointer rounded-2xl sm:rounded-3xl scale-[0] translate-y-56 rotate-x-[35deg] hover:cursor-pointer transition-shadow duration-700 hover:shadow-[0_0_40px_rgba(110,81,240,1)]">
-    <a href="https://github.com/byluisfer/Real-Madrid" class="relative h-auto w-auto px-10 text-white hover:shadow-lg sm:hover:shadow-2xl transition-all duration-300 group overflow-hidden" target="_blank">
+    <a href="https://github.com/byluisfer/Real-Madrid" class="relative h-auto w-auto px-10 text-white hover:shadow-lg sm:hover:shadow-2xl transition-all duration-300 group overflow-hidden" target="_blank" rel="noopener noreferrer">
   
       <div class="mt-10 relative z-10">
         <h2 class="text-2xl sm:text-3xl font-InterTight">Real Madrid website</h2>
@@ -37,14 +37,14 @@
           <span class="text-quatenario font-InterTight text-sm sm:text-xl">- Erlebe Real Madrid mit einer modernen und responsive UI</span>
         </p>
 
-        <img src="/assets/RealMadrid.webp" alt="Real Madrid website" loading="lazy" class="w-full h-full object-cover mt-8 rounded-t-2xl"/>
+        <img src="/assets/RealMadrid.webp" alt="Real Madrid website" loading="lazy" width="600" height="400" class="w-full h-full object-cover mt-8 rounded-t-2xl"/>
       </div>
     </a>
   </div>
 
   <!-- Online Shop -->
   <div class="proyectoCard relative flex w-full max-w-6xl -mt-12 sm:mt-0 mx-auto bg-nose justify-center cursor-pointer rounded-2xl sm:rounded-3xl scale-[0] translate-y-56 rotate-x-[35deg] hover:cursor-pointer transition-shadow duration-700 hover:shadow-[0_0_40px_rgba(255,90,31,1)]">
-    <a href="https://github.com/byluisfer/online-shop" class="relative h-auto w-auto px-10 text-white hover:shadow-lg sm:hover:shadow-2xl transition-all duration-300 group overflow-hidden" target="_blank">
+    <a href="https://github.com/byluisfer/online-shop" class="relative h-auto w-auto px-10 text-white hover:shadow-lg sm:hover:shadow-2xl transition-all duration-300 group overflow-hidden" target="_blank" rel="noopener noreferrer">
   
       <div class="mt-10 relative z-10">
         <h2 class="text-2xl sm:text-3xl font-InterTight">Online Shop mit AJAX</h2>
@@ -53,35 +53,37 @@
           <span class="text-quatenario font-InterTight text-sm sm:text-xl">- Dies ist ein Online-Musikshop mit implementiertem AJAX</span>
         </p>
 
-        <img src="/assets/OnlineShop.webp" alt="Online Shop" loading="lazy" class="w-full h-full object-cover mt-8 rounded-t-2xl"/>
+        <img src="/assets/OnlineShop.webp" alt="Online Shop" loading="lazy" width="600" height="400" class="w-full h-full object-cover mt-8 rounded-t-2xl"/>
       </div>
     </a>
   </div>
 </section>
 
 <script>
-  document.addEventListener("DOMContentLoaded", async () => {
-  
-    const { gsap } = await import("gsap");
-    const { ScrollTrigger } = await import("gsap/ScrollTrigger");
-    gsap.registerPlugin(ScrollTrigger);
+  document.addEventListener("DOMContentLoaded", () => {
+    if (window.innerWidth > 768) {
+      import("gsap").then(({ gsap }) => {
+        import("gsap/ScrollTrigger").then(({ ScrollTrigger }) => {
+          gsap.registerPlugin(ScrollTrigger);
 
-    // Select all the cards
-    document.querySelectorAll(".proyectoCard").forEach((card) => {
-      gsap.to(card, {
-        scrollTrigger: {
-          trigger: card,
-          start: "top 180%",
-          end: "center center",
-          scrub: 3,
-        },
-        scale: 1,
-        translateY: 0,
-        rotateX: 0,
-        duration: 2.5,
-        ease: "power2.out",
+          document.querySelectorAll(".proyectoCard").forEach((card) => {
+            gsap.to(card, {
+              scrollTrigger: {
+                trigger: card,
+                start: "top 180%",
+                end: "center center",
+                scrub: 3,
+              },
+              scale: 1,
+              translateY: 0,
+              rotateX: 0,
+              duration: 2.5,
+              ease: "power2.out",
+            });
+          });
+        });
       });
-    });
+    }
   });
 </script>
 
